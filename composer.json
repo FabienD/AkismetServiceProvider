@@ -1,0 +1,21 @@
+{
+    "name": "myprod/askismet-service-provider",
+    "type": "library",
+    "description":  "Akismet service provider for the Silex µframwork.",
+    "keywords": ["akismet", "silex"],
+    "license":  "MIT",
+    "authors": [
+        {
+            "name": "Fabien D.",
+            "email": "fabien@myprod.net",
+            "homepage": "http://www.myprod.net"
+        }
+    ],
+    "require": {
+        "tijsverkoyen/Akismet": "1.1.*",
+        "silex/silex": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Myprod\\Silex\\Provider\\": "src/" }
+    }
+}
