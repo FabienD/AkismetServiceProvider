@@ -22,13 +22,15 @@ in the ``require`` section. Invoke « ``composer.phar install`` » and it should
 Register Service Provider :
 -------------------
 
-$app->register(
-    new Myprod\Silex\Provider\AkismetServiceProvider(), 
-    array(
-        'akismet.apiKey'    => your_akismet_api_key,
-        'akismet.url'       => your_blog_url
-    )
-);
+::
+
+    $app->register(
+        new Myprod\Silex\Provider\AkismetServiceProvider(), 
+        array(
+            'akismet.apiKey'    => your_akismet_api_key,
+            'akismet.url'       => your_blog_url
+        )
+    );
 
 Using Akismet Service
 -------------------
